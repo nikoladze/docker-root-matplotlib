@@ -18,3 +18,4 @@ ENV PYTHONPATH      "$ROOTSYS/lib:$PYTHONPATH"
 
 ADD https://root.cern.ch/download/root_v${root_version}.Linux-centos7-x86_64-gcc4.8.tar.gz /var/tmp/root.tar.gz
 RUN tar xzf /var/tmp/root.tar.gz -C /opt && rm /var/tmp/root.tar.gz
+RUN pip install numpy root_numpy
